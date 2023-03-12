@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #2B2B2B;
+        }
+        ::placeholder {
+            color: #858584;
+            opacity: 1;
+            }
+
+        #inputi {
+            display: grid;
+        }
+            
+        #button5 {
+            background-image: url(users/User.png);
+            background-color:#A259FF;
+            background-position: 15px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            padding-left: 62px;
+            padding-right: 20px;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            background-position-y: center;
+            background-position-x: 25%;
+            border: 0;            
+            color: #FFFFFF;            
+            }
+            #input {
+                background-image: url(users/MagnifyingGlass.png);
+                background-repeat: no-repeat;
+                background-position-x: 97%;
+                background-position-y: center;
+                background-color: #2B2B2B;
+                padding-left: 20px;
+                border-radius: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: 1px solid #3B3B3B;
+                
+                
+            }
+            #nft {
+                text-align: center;
+            }
+            #fc {
+                
+                border-style:groove;
+                border-color: #858585;
+                border-bottom: 0ch;
+                border-left: 0ch;
+                border-right: 0ch;
+            }
+            #footer {
+                border-style:groove;
+                border-color: #858584;
+                border-top: 0ch;
+                border-left: 0ch;
+                border-right: 0ch;
+            }
+            
+            @media screen and (min-width: 771px) {
+                
+                #end {
+                    display: none;
+                }
+                #ethh {
+                    padding-left: 150px;
+                    font-size: 16px;
+                }
+                 
+                #two1 {
+                    display: none;
+                }
+                
+                #p1 {
+                    padding-left: 100px;
+                    padding-right: 100px ;
+                }
+                
+            }
+            @media screen and (max-width: 770px) {
+                #p {
+                    margin-top: 50px;
+                }
+                #end1 {
+                    display: none;
+                }
+               
+                #highest {
+                    padding-left: 265px;
+                    font-size: 12px;
+                }
+                #two {
+                display: none;
+            }
+            
+            
+            }
+            @media screen and (max-width: 417px) {
+                #col2 {
+                    display: none;
+                }
+            }
+
+            @media screen and (min-width: 416px) {
+                #col3 {
+                    display: none;
+                }
+            }
+            
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2B2B2B;">
+        <div class="container">
+            <div class="logo" >
+               <a href="https://www.figma.com/file/23ePDiiiJVZXDJiqA5gjIA/%E1%83%93%E1%83%90
+               %E1%83%95%E1%83%90%E1%83%9A%E1%83%94%E1%83%91%E1%83%90-16?node-id=0%3A1673&t=HKcYaRLoGldAWWSx-0"> <img src="users/logo.png"></a>
+                
+            </div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>   
+                 <div class="collapse navbar-collapse text-light" id="mynav">
+                     <ul class="navbar-nav ms-auto" >
+                         <li class="nav-item" style="margin-right: 30px;">
+                            <a href="#" style="padding-top: 19px;" class="nav-link text-light">Marketplace</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 30px;">
+                            <a href="#" style="padding-top: 19px;" class="nav-link text-light">Rankings</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 30px;">
+                             <a href="#" style="padding-top: 19px;" class="nav-link text-light">Connect a wallet</a>
+                        </li>                
+                        <li class="nav-item">                      
+                                <button type="button" id="button5">Sign Up</button>                             
+                        </li>
+                    </ul>    
+                </div>
+         </div>
+    </nav>
+    <div class="container ps-5 pt-5 pe-5 pb-3">
+        <h1 style="font-size: 51px; color: #ffffff;">Browse Marketplace</h1>
+        <p style="font-size: 22px; color: #ffffff;">Browse through more than 50k NFTs on the NFT Marketplace.</p>
+    </div>
+    <div class="container ps-5 pe-5 pb-5" id="inputi"> 
+        <input type="text" id="input"  placeholder="Search your favourite NFTs">
+    </div>
+
+    <div class="container-fluid  mt-5" id="fc">
+        <div class="container ps-5  pe-5 ">
+        <div class="row ">
+           
+            <div class="col-6 border-bottom p-3 " id="nft">
+                <strong class="text-light" >NFTs</strong>
+                <button class="rounded-4 ps-2 pe-2" style="background-color: #858585; color: #ffffff; border: 0;">302</button>
+            </div>
+            
+            <div class="col-6 p-3"id="nft" >
+                <strong class="text-light" >Collection</strong>
+                <button class="rounded-4 ps-2 pe-2" style="background-color: #858585; color: #3B3B3B; border: 0; ">67</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    
+        <div class="container-fluid p-5  gx-0" style="background-color: #3B3B3B" id="p">
+            
+                
+            
+                <div class="row " id="p1" >
+                    <div class="col-12">    
+                        <div class="row  gx-3 gy-3" style="background-color: #3B3B3B;">
+
+
+
+
+
+
+
+
+                        <div class="col-md-4 col-sm-12 col-12  ">
+                            <div class="card text-light  " style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;  ">
+                                <img src="placeholders/Image Placeholder (31).png" class="card-img-top" alt="...">
+                                
+                                <div class="card-body col-12 ">
+                                <p class="card-text ps-2"> <strong>Magic Mushroom 0325</strong></p>
+                                </div>
+                                <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                    <div class=" text-light col-12">
+                                        <input type="image" src="avatars/Avatar Placeholder (33).png" >
+                                            <span>Shroomie</span>
+                                                                                                         
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>  
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-12 col-12 "id="two" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (32).png" class="card-img-top" alt="...">
+                                    <div class="card-body col-12">
+                                    <p class="card-text ps-2"> <strong>Happy Robot 032</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4  " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (34).png"  >
+                                                <span>BeKind2Robots</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="col-md-4 col-sm-12 col-12 " >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (33).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Happy Robot 024</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (34).png"  >
+                                                <span>BeKind2Robots</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-12 col-12 " id="two1">
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (32).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Happy Robot 0324</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (34).png"  >
+                                                <span>BeKind2Robots</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>      
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-12 col-12" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (34).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Designer Bear</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (35).png"  >
+                                                <span>Mr Fox</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>      
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-12 " >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (35).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Colorful Dog 0356</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (36).png"  >
+                                                <span>Keepitreal</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-12 "id="two" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (36).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Dancing Robot 0312</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (37).png"  >
+                                                <span>Robotica</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-12 "id="two" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (37).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Cherry Blossom Girl 035</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (38).png"  >
+                                                <span>MoonDancer</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-12 "id="two" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (38).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Space Travel</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (39).png"  >
+                                                <span>NebulaKid</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>      
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-12 "id="two" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (39).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Sunset Dimension</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (44).png"  >
+                                                <span>Animakid</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-12 "id="two" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (40).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Desert Walk</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (41).png"  >
+                                                <span>Catch 22</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-12 "id="two" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (41).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>IceCream Ape 0324</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (42).png"  >
+                                                <span>Ice Ape Club</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-12 "id="two" >
+                                <div class="card text-light" style=" background-color: #2B2B2B; border-radius: 30px; border: 0ch;">
+                                    <img src="placeholders/Image Placeholder (42).png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text ps-2"> <strong>Colorful Dog 0344</strong></p>
+                                    </div>
+                                    <div class="btn-group ps-4 " role="group" aria-label="Basic example">
+                                        <div class=" text-light col-12">
+                                            <input type="image" src="avatars/Avatar Placeholder (43).png"  >
+                                                <span>PuppyPower</span>
+                                                <div class="row " id="col2">
+                                                    <div class="col-8 col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col-4 col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>          
+                                                
+                                                <div class="row " id="col3">
+                                                    <div class="col col-md-8  col-sm-9 " >
+                                                         <p style="font-size: 12px; color: #858584;">Price</p>
+                                                        <p style="font-size: 16px;">1.63 ETH</p>
+                                                    </div>
+                                                    
+                                                    <div class="col col-md-4  col-sm-3">
+                                                        <p style="font-size: 12px; color: #858584;">Highest Bid</p>
+                                                        <p style="font-size: 16px;">0.33 wETH</p>
+                                                    </div>
+                                                </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    
+
+
+    <div class="container-fluid mt-1" style="background-color: #3b3b3b;" >
+        <div class="container pt-5" id="footer">
+            <div class="row" style="margin-bottom: 25px;">
+                <div class="col-md-4 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="users/logo.png">
+                        <br><br>
+                            <p style="color: #CCCCCC;">NFT marketplace UI created <br> with Anima for Figma.</p>
+                        
+                            <p style="color: #CCCCCC;">Join our community</p>
+    
+                            <img src="users/Icons.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="row ">
+                        <div class="col-12">
+                            <strong style="color: #FFFFFF;">Explore</strong>
+                            <br><br>
+                            <p style="color: #CCCCCC;">Marketplace</p>
+                        
+                            <p style="color: #CCCCCC;">Rankings</p>
+    
+                            <p style="color: #CCCCCC;">Connect a wallet </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <strong style="color: #FFFFFF;;">Join our weekly digest </strong>
+                            <br><br>
+                            <p style="color: #CCCCCC;">Get exclusive promotions & updates <br> straight to your inbox.</p>
+    
+    
+                            <div class="input-group" id="end1">
+                                <input type="text" class="form-control rounded-5 " placeholder="Enter your email here" style="z-index: 1; padding-right: 50px;">
+                               
+                                <div class="  rounded-5 pt-3 pb-3 ps-5 pe-5" style="background: #A259FF; margin-left: -50px; z-index: 2;">                               
+                                    <span class="text-light">Subscribe</span>
+                                </div>
+                              </div>
+                              <div id="end">
+                                <div class="mb-4" >
+                                  <input type="text" class="form-control rounded-5 p-3"  placeholder="Enter your email here">
+                              </div>
+                              <div class="  rounded-5 pt-3 pb-3 ps-5 pe-5 mb-5" style="background: #A259FF; text-align: center;">                             
+                                  <span class="text-light">Subscribe</span>
+                              </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="container border-top" style=" padding-top: 25px; padding-bottom: 25px;">
+                <p style="color: #CCCCCC;">Ⓒ NFT Market. Use this template freely.</p>
+            </div>
+        </div>
+</body>
+</html>
